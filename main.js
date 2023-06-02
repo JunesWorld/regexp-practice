@@ -15,7 +15,7 @@ abbcccdddd
 // const regexp = /the/gi
 // console.log(str.match(regexp)) 
 
-const regexp = /fox/gi
+//  const regexp = /fox/gi
 // console.log(regexp.test(str))
 
 // replace = 원본데이터에 손상 x
@@ -25,3 +25,15 @@ const regexp = /fox/gi
 // 원본 data 변경하려면? const -> let
 // str = str.replace(regexp, 'AAA')
 // console.log(str)
+
+/**
+ * 플래그 옵션
+ */
+
+// g = 전체 영역에서 검색
+// m = 줄 마다 시작하고 끝나는 부분을 해석하겠다.
+
+// .(기호(but, 정규표현식으로 표현되는 기호))을 찾고 싶을 때는 앞에 이스케이프 문자(\) 붙여주기! 
+// $ = 문자데이터 끝부분에 마침표 기호가 있는지 일치 시키는 패턴
+
+console.log(str.match(/\.$/gim))
