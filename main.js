@@ -12,6 +12,16 @@ abbcccdddd
 // const regexp = new RegExp('the', 'gi')
 
 // 리터럴 방식(선호!)
-const regexp = /the/gi
+// const regexp = /the/gi
+// console.log(str.match(regexp)) 
 
-console.log(str.match(regexp)) 
+const regexp = /fox/gi
+// console.log(regexp.test(str))
+
+// replace = 원본데이터에 손상 x
+// console.log(str.replace(regexp, 'AAA'))
+// console.log(str)
+
+// 원본 data 변경하려면? const -> let
+// str = str.replace(regexp, 'AAA')
+// console.log(str)
