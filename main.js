@@ -12,8 +12,8 @@ abbcccdddd
 // const regexp = new RegExp('the', 'gi')
 
 // 리터럴 방식(선호!)
-// const regexp = /the/gi
-// console.log(str.match(regexp)) 
+const regexp = /the/gi
+console.log(str.match(regexp)) 
 
 //  const regexp = /fox/gi
 // console.log(regexp.test(str))
@@ -35,8 +35,7 @@ abbcccdddd
 
 // .(기호(but, 정규표현식으로 표현되는 기호))을 찾고 싶을 때는 앞에 이스케이프 문자(\) 붙여주기! 
 // $ = 문자데이터 끝부분에 마침표 기호가 있는지 일치 시키는 패턴
-
-// console.log(str.match(/\.$/gim))
+console.log(str.match(/\.$/gim))
 
 /**
  * 패턴(표현1)
