@@ -36,4 +36,54 @@ abbcccdddd
 // .(기호(but, 정규표현식으로 표현되는 기호))을 찾고 싶을 때는 앞에 이스케이프 문자(\) 붙여주기! 
 // $ = 문자데이터 끝부분에 마침표 기호가 있는지 일치 시키는 패턴
 
-console.log(str.match(/\.$/gim))
+// console.log(str.match(/\.$/gim))
+
+/**
+ * 패턴(표현1)
+ */
+
+// d로 끝나는 부분
+console.log(
+  str.match(/d$/gm)
+)
+
+// t로 시작하는 부분(대소문자 구분 x = i)
+console.log(
+  str.match(/^t/gim)
+)
+
+// . 모든 문자
+// http 출력 
+console.log(
+  str.match(/h..p/g)
+)
+
+// | 또는
+// /fox|dog/ = fox
+// /fox|dog/g = fox, dog
+console.log(
+  str.match(/fox|dog/g)
+)
+
+// ? 있거나 없거나
+// http https
+console.log(
+  str.match(/http?/g)
+)
+
+// 연속일치
+console.log(
+  str.match(/d{2}/g)
+)
+
+// 2개 이상 연속일치
+console.log(
+  str.match(/d{2,}/g)
+)
+
+// 2개이상 3개이하
+// \w : 숫자를 포함한 영어 알파벳
+// \b : 경계를 만들어줌
+console.log(
+  str.match(/\b\w{2,3}\b/g)
+)
