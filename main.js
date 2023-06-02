@@ -87,3 +87,36 @@ console.log(
 console.log(
   str.match(/\b\w{2,3}\b/g)
 )
+
+// 숫자 하나 이상 연속
+// 연속적인 모든 문자 [가-힣]
+console.log(
+  str.match(/[0-9]{1,}/g)
+)
+
+// 소문자 f로 시작하는 모든 단어 찾기
+console.log(
+  str.match(/\bf\w{1,}\b/g)
+)
+
+// 공백 + 줄바꿈 찾기 = \s
+console.log(
+  str.match(/\s/g)
+)
+
+// 활용! 공백 제거
+// const h = `   the hello  world   !`
+// console.log(
+//   h.replace(/\s/g, '')
+// )
+
+
+// Email ID만 찾기 = 앞쪽 일치
+console.log(
+  str.match(/.{1,}(?=@)/g)
+)
+
+// 뒤쪽 일치
+console.log(
+  str.match(/(?<=@).{1,}/g)
+)
